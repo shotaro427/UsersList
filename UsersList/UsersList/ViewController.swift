@@ -19,8 +19,10 @@ class ViewController: UIViewController {
     
     /// ユーザーリストのボタンを押した時の処理
     @IBAction func pushButton(_ sender: UIButton) {
+        
         // ユーザーリスト画面で押されたボタンに書かれている名前を取得
         giveName = sender.currentTitle!
+        
         // Segue Identifierが"showDetails"のSegueを通って画面遷移
         performSegue(withIdentifier: "showDetails", sender: nil)
     }
