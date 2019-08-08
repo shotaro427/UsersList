@@ -13,7 +13,6 @@
         <!--Navigation Controller-->
         <scene sceneID="uUa-yP-EdH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="97e-mT-tpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="gjW-rp-rNv" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KQt-rP-RYE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -23,6 +22,7 @@
                         <segue destination="wpe-Ld-ryo" kind="relationship" relationship="rootViewController" id="8Ok-6f-1xT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97e-mT-tpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-614" y="102"/>
         </scene>
@@ -276,10 +276,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6e-1n-nFR">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i9p-Da-YWe">
-                                                <rect key="frame" x="20" y="10" width="374" height="184"/>
+                                                <rect key="frame" x="20" y="10" width="374" height="134"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o3-Sv-C73">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="42"/>
@@ -301,8 +301,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-l0-fIH">
-                                                        <rect key="frame" x="0.0" y="134" width="374" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-l0-fIH">
+                                                        <rect key="frame" x="0.0" y="134" width="374" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
