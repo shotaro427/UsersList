@@ -9,6 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    // 遷移元から受け取る情報を入れる変数
+    var receiveName: String = String()
 
     // 名前を表示するラベル
     @IBOutlet weak var nameLabel: UILabel!

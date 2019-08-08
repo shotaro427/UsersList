@@ -257,7 +257,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ユーザーリスト" id="SXu-uA-CgS"/>
                     <connections>
-                        <segue destination="zDc-dD-R4Q" kind="show" id="Jpv-Td-IOU"/>
+                        <segue destination="zDc-dD-R4Q" kind="show" identifier="showDetails" id="Jpv-Td-IOU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGy-8u-alD" userLabel="First Responder" sceneMemberID="firstResponder"/>
