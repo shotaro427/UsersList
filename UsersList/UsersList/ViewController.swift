@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         "サッカー、カラオケ、旅行、食事、飲酒等基本楽しければなんでもいい。\nポンコツという自負を持っている",
         "エレキベースが趣味。高校1年からロックを中心に音楽活動を始める。初めはASIAN KUNG - FU GENERATIONや東京事変などを好みとしていた。大学からは一変し、フュージョンを中心に演奏活動をする。Pat Metheny Group や スナーキー・パピーが好き。",
         "普段は、読書か散歩かアニメを見て過ごしている超インドア。最近は筋トレにもハマりかけている",
-        "サッカー好きの脳筋です。\n今の趣味はバイトすること週6でみんな大好きcoffee mafiaで働いてますよ!\nいつでもおいで:mafia:",
+        "サッカー好きの脳筋です。\n今の趣味はバイトすること週6でみんな大好きcoffee mafiaで働いてますよ!\nいつでもおいで",
         "あだなは、はち(本名:なな)で、東京にくるたびにハチ公に挨拶している。\n弾丸ひとり旅など、突然思い立ったことをやるのが好き。\n「東京生活わくわくしています〜」とのこと",
         "ゲームが大好き。\n特にドラクエをこよなく愛しており、2018年の夏休みは約200時間をドラクエに費やした。\n他にもピアノや海外旅行や読書など様々な趣味がある。"
     ]
@@ -73,16 +73,17 @@ class ViewController: UIViewController {
     
     /// Segue遷移前動作
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // segueのidentifierが"showDetails"かどうかの確認＋segueの画面遷移先がSecondViewController型かのViewControllerかどうかの確認
-        guard segue.identifier == "showDetails", let nextVC = segue.destination as? SecondViewController else {
-            return
+        // segueのidentifierが"showDetails"かどうかの確認
+        if segue.identifier == "showDetails" {
+            // segueの画面遷移先がSecondViewController型かのViewControllerかどうかの確認
+            guard let nextVC = segue.destination as? SecondViewController else { return }
+            // 遷移先の変数に、渡したい値(ここでは名前と趣味)を代入
+            nextVC.receiveName = giveName // 名前を渡す
+            nextVC.receiveHobby = giveHobby // 趣味を渡す
         }
-        // 遷移先の変数に、渡したい値(ここでは名前と趣味)を代入
-        nextVC.receiveName = giveName // 名前を渡す
-        nextVC.receiveHobby = giveHobby // 趣味を渡す
     }
     
-
-
+    
+    
 }
 

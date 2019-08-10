@@ -29,5 +29,4 @@ class SecondViewController: UIViewController {
         // 趣味を表示するラベルに受け取った趣味を表示させる
         hobbyLabel.text = receiveHobby
     }
-    
 }
